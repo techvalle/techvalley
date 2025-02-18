@@ -226,7 +226,7 @@ const EditProfile: React.FC = () => {
           </View>
         </TouchableOpacity>
         <Text style={styles.userName}>{user?.userName}</Text>
-        <View style={styles.statsContainer}>
+        {/* <View style={styles.statsContainer}>
           <View style={styles.stat}>
             <CardName icon={icons.starpp} title={t.rating} />
             <StarRating rating={4.5} />
@@ -235,7 +235,7 @@ const EditProfile: React.FC = () => {
             <CardName icon={icons.profileppp} title={t.followers} />
             <Text>312</Text>
           </View>
-        </View>
+        </View> */}
       </View>
       <CustomInputP
         value={name}
@@ -315,6 +315,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#888",
     marginVertical: 4,
+    marginBottom: 16,
   },
   statsContainer: {
     flexDirection: "row",
